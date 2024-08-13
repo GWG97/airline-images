@@ -1,11 +1,6 @@
- name: Generate README
+name: Generate README with Image List
 
-on:
-  push:
-    paths:
-      - '**.png'
-      - '**.jpg'
-      - '**.jpeg'
+on: push
 
 jobs:
   build:
@@ -31,4 +26,3 @@ jobs:
         git add README.md
         git commit -m "Automated update to README with image links"
         git push
- 
