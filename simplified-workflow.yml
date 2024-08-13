@@ -1,0 +1,14 @@
+name: Simplified Workflow
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository content
+      uses: actions/checkout@v2
+
+    - name: Run a simple command
+      run: echo "GitHub Actions are running!"
